@@ -1,0 +1,33 @@
+<!-- Use if you want to show previous and next for all posts. -->
+{% assign user_url = site.url | append: site.baseurl %}
+{% assign full_base_url = user_url | default: site.github.url %}
+{% if page.previous.url %}
+  <div class="col-4 sm-width-full left mr-lg-4 mt-3">
+    <a class="no-underline border-top-thin py-1 block" href="{{ page.previous.url | prepend: full_base_url }}">
+      <span class="h5 bold text-accent">前の記事</span>
+      <p class="bold h3 link-primary mb-1">{{ page.previous.title }} {{ page.previous.catch }}</p>
+      <p>
+        {% if page.previous.content contains '<!--more-->' %}
+          {{ page.previous.content | split:'<!--more-->' | first }}
+        {% else %}
+          {{ page.previous.content }}
+        {% endif %}
+      </p>
+    </a>
+  </div>
+  {% endif %}
+  {% if page.next.url %}
+  <div class="col-4 sm-width-full left mt-3">
+    <a class="no-underline border-top-thin py-1 block" href="{{ page.next.url | prepend: full_base_url }}">
+      <span class="h5 bold text-accent">次の記事</span>
+      <p class="bold h3 link-primary mb-1">{{ page.next.title }}</p>
+      <p>
+        {% if page.next.content contains '<!--more-->' %}
+          {{ page.next.content | split:'<!--more-->' | first }}
+        {% else %}
+          {{ page.next.content }}
+        {% endif %}
+      </p>
+    </a>
+  </div>
+{% endif %}

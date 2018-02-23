@@ -14,18 +14,18 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: DX研究所
-email: atsushi@moongift.jp
+email: dx@moongift.jp
 description: >- # this means to ignore newlines until "baseurl:"
-  DX（Developer Experience：開発者体験）とは開発者向けのサービス、製品に触れるすべての機会を通じたライフサイクルにおける体験を意味します。
-  高品質なDXを提供することによって信頼度の向上、利用増、ブランド構築と言ったメリットが生まれます。
-baseurl: "/" # the subpath of your site, e.g. /blog
+  DX研究所ではDX（Developer Experience：開発者体験）に関する情報を発信します
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dxlabo.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: devreljp
-github_username:  moongift
+github_username:  goofmint
 
 # Build settings
 markdown: kramdown
 remote_theme: MOONGIFT/swiss
+theme: jekyll-swiss
 plugins:
   - jekyll-feed
 
