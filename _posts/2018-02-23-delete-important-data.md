@@ -2,7 +2,7 @@
 layout: post
 title:  "データを削除する際のフロー"
 date:   2018-02-23 12:00:00 +0900
-categories: DX ワークフロー
+categories: DX フロー
 excerpt_separator: <!--more-->
 ---
 
