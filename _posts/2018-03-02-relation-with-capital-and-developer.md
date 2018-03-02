@@ -37,7 +37,8 @@ GoogleではPixate、Writelyなど買収後にサービスを閉鎖する場合�
 - Google Talk
 - Google Spaces
 - Google feed API
-− Google Tango
+- Google Tango
+
 
 この中には新しいサービスへの移行（例えばGoogle TalkはGoogle ハングアウトなど）が想定されている場合もありますが、まったく用意されていない場合もあります。開発者としては2016年に終了したGoogle Codeであったり、Google feed API、Google Site Searchなどがなくなってしまうのは大きな損失ではないでしょうか。
 
